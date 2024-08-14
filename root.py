@@ -1,11 +1,11 @@
 #root dns
 from socket import*
-serv_addr="192.168.0.107"#own ip
+serv_addr="xxx"#xxx=own ip address
 serv_port=8000
 serv_sock=socket(AF_INET,SOCK_DGRAM)
 serv_sock.bind((serv_addr,serv_port))
 print("the server is ready to receive")
-lookuptable={'in':"28.187.54.69",'edu':"66.254.184.61",'com':"192.168.0.132"}# TLD ip
+lookuptable={'in':"28.187.54.69",'edu':"66.254.184.61",'com':"xxx"}# xxx=TLD ip address
 def bin_to_str(b):
     n=len(b)
     low=0
