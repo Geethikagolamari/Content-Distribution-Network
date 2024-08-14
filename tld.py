@@ -1,11 +1,11 @@
 #tld code
 from socket import*
-serv_addr="192.168.0.132"#own ip
+serv_addr="xxx"#xxx=own ip address
 serv_port=8000
 serv_sock=socket(AF_INET,SOCK_DGRAM)
 serv_sock.bind((serv_addr,serv_port))
 print("the server is ready to receive")
-lookuptable={'www.cdn1.com':"28.147.154.79",'www.cdn2.com':"96.254.114.61",'www.cdn25.com':"192.168.0.129"}#addr of auth 1
+lookuptable={'www.cdn1.com':"28.147.154.79",'www.cdn2.com':"96.254.114.61",'www.cdn25.com':"xxx"}#xxx= IP addr of auth 1
 def bin_to_str(b):
     n=len(b)
     low=0
