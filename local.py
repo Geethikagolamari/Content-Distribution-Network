@@ -42,7 +42,7 @@ def ip_to_bin(ip):
     print(str)
     return str
 from socket import*
-addr="192.168.0.130" # own ip
+addr="xxx" # xxx=own ip address
 port=8001
 sock=socket(AF_INET,SOCK_DGRAM)
 sock.bind((addr,port))
@@ -50,7 +50,7 @@ print("Ready to recieve")
 while 1:
     ques,c_addr=sock.recvfrom(2048)
     print("got msg from",c_addr)
-    serv_addr="192.168.0.107"# root dns 
+    serv_addr="xxx"# xxx=root dns ip address
     serv_port=8000
     client_sock=socket(AF_INET,SOCK_DGRAM)
     ques_str_bin=ques[96:len(ques)-32:]
