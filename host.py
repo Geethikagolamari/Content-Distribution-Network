@@ -1,6 +1,6 @@
 #host
 from socket import*
-serv_addr="192.168.12.116"#local server ip 
+serv_addr="xxx"#xxx=local server ip 
 serv_port=8001
 client_sock=socket(AF_INET,SOCK_DGRAM)
 
