@@ -1,12 +1,12 @@
 #Decoding query
 #auth 1
 from socket import*
-serv_addr="192.168.0.129" # self ip address
+serv_addr="xxx" # xxx=self ip address
 serv_port=8000
 serv_sock=socket(AF_INET,SOCK_DGRAM)
 serv_sock.bind((serv_addr,serv_port))
 print("the server is ready to receive")
-lookuptable={"1":"192.168.0.131","2":"66.254.124.62","3":"12.116.1.10"}#ip address of auth 2 
+lookuptable={"1":"xxx","2":"66.254.124.62","3":"12.116.1.10"}#xxx=ip address of auth 2 
 def bin_to_str(b):
     n=len(b)
     low=0
